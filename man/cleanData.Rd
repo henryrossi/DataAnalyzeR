@@ -4,15 +4,19 @@
 \alias{cleanData}
 \title{Cleans the data in the data frame}
 \usage{
-cleanData(filename, removeNA)
+cleanData(df, removeNA, removeDuplicates, cleanNames)
 }
 \arguments{
+\item{df}{a dataframe to be cleaned}
+
 \item{removeNA}{a boolean to remove rows with NA values}
 
-\item{dataframe}{a dataframe to be cleaned}
+\item{removeDuplicates}{a boolean to remove duplicate rows}
+
+\item{cleanNames}{a boolean to clean the column names using the janitor package}
 }
 \value{
-A dataframe
+A cleaned dataframe
 }
 \description{
 Cleans the data in the data frame

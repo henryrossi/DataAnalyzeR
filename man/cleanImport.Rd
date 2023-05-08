@@ -4,17 +4,25 @@
 \alias{cleanImport}
 \title{Loads a file given a format, with optional treatment of NA values}
 \usage{
-cleanImport(filename, filetype, removeNA = TRUE)
+cleanImport(
+  file,
+  type,
+  removeNA = TRUE,
+  removeDuplicates = TRUE,
+  cleanNames = TRUE
+)
 }
 \arguments{
-\item{filename}{The name of the file to be imported}
-
-\item{filetype}{The type of the file ("csv" = (.csv), "excel" = (.xls, .xlsx) "text" = (txt))}
+\item{file}{The type of the file ("csv" = (.csv), "excel" = (.xls, .xlsx) "text" = (txt))}
 
 \item{removeNA}{a boolean to remove rows with NA values}
+
+\item{removeDuplicates}{a boolean to remove duplicate rows}
+
+\item{cleanNames}{a boolean to clean the column names using the janitor package}
 }
 \value{
-A dataframe
+A cleaned dataframe
 }
 \description{
 Loads a file given a format, with optional treatment of NA values
