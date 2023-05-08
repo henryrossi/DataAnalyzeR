@@ -9,7 +9,8 @@ cleanImport(
   type,
   removeNA = TRUE,
   removeDuplicates = TRUE,
-  cleanNames = TRUE
+  cleanNames = TRUE,
+  delimeter = "\\t"
 )
 }
 \arguments{
@@ -20,6 +21,8 @@ cleanImport(
 \item{removeDuplicates}{a boolean to remove duplicate rows}
 
 \item{cleanNames}{a boolean to clean the column names using the janitor package}
+
+\item{delimeter}{a character representing the delimeter if a text file is being read in}
 }
 \value{
 A cleaned dataframe

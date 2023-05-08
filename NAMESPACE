@@ -3,3 +3,6 @@
 export("%>%")
 export(cleanImport)
 importFrom(magrittr,"%>%")
+importFrom(readxl,read_excel)
+importFrom(utils,read.csv)
+importFrom(utils,read.table)
