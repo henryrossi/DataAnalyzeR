@@ -1,10 +1,14 @@
 Package: DataAnalyzeR
-Title: What the Package Does (One Line, Title Case)
+Title: Basic Data Analysis Operations
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+    person("Cassie", "Giovannetti", , "first.last@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    person("Henry", "Rossi", , "first.last@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Sam", "Todd", , "first.last@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Tools to help with basic data imports/cleaning, visualizations, and statistical tests. The package contains tools that help streamline data import across multiple file types. It also has a variety of data cleaning customization options that will execute when the data is imported.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
