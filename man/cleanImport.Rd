@@ -2,31 +2,33 @@
 % Please edit documentation in R/import_cleaning.R
 \name{cleanImport}
 \alias{cleanImport}
-\title{Loads a file given a format, with optional treatment of NA values}
+\title{Loads in a file and cleans it according to user specification, returning the result in a dataframe}
 \usage{
 cleanImport(
-  file,
-  type,
+  fileName,
+  sheetName = 1,
+  headerRow = TRUE,
   removeNA = TRUE,
   removeDuplicates = TRUE,
-  cleanNames = TRUE,
-  delimeter = "\\t"
+  cleanNames = TRUE
 )
 }
 \arguments{
-\item{file}{The type of the file ("csv" = (.csv), "excel" = (.xls, .xlsx) "text" = (txt))}
+\item{fileName}{The name of the file to be imported}
+
+\item{sheetName}{The name of the sheet to be opened (only for xls and xlsx files)}
+
+\item{headerRow}{a boolean if the file contains a header row (only for txt files)}
 
 \item{removeNA}{a boolean to remove rows with NA values}
 
 \item{removeDuplicates}{a boolean to remove duplicate rows}
 
 \item{cleanNames}{a boolean to clean the column names using the janitor package}
-
-\item{delimeter}{a character representing the delimeter if a text file is being read in}
 }
 \value{
 A cleaned dataframe
 }
 \description{
-Loads a file given a format, with optional treatment of NA values
+Loads in a file and cleans it according to user specification, returning the result in a dataframe
 }
