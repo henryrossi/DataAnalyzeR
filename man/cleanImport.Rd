@@ -2,7 +2,7 @@
 % Please edit documentation in R/import_cleaning.R
 \name{cleanImport}
 \alias{cleanImport}
-\title{Loads in a file and cleans it according to user specification, returning the result in a dataframe}
+\title{Loads in a file and cleans it}
 \usage{
 cleanImport(
   fileName,
@@ -30,5 +30,5 @@ cleanImport(
 A cleaned dataframe
 }
 \description{
-Loads in a file and cleans it according to user specification, returning the result in a dataframe
+Loads in a file and cleans it
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/import_cleaning.R
 \name{cleanData}
 \alias{cleanData}
-\title{Cleans the data in the data frame according to user specification}
+\title{Cleans the data frame}
 \usage{
 cleanData(df, removeNA, removeDuplicates, cleanNames)
 }
@@ -19,5 +19,5 @@ cleanData(df, removeNA, removeDuplicates, cleanNames)
 A cleaned dataframe
 }
 \description{
-Cleans the data in the data frame according to user specification
+Cleans the data frame
 }

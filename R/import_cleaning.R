@@ -1,4 +1,4 @@
-#' Loads in a file and cleans it according to user specification, returning the result in a dataframe
+#' Loads in a file and cleans it
 #'
 #' @param fileName The name of the file to be imported
 #' @param sheetName The name of the sheet to be opened (only for xls and xlsx files)
@@ -44,7 +44,7 @@ cleanImport <- function(fileName,
 
 }
 
-#' Cleans the data in the data frame according to user specification
+#' Cleans the data frame
 #'
 #' @param df a dataframe to be cleaned
 #' @param removeNA a boolean to remove rows with NA values
