@@ -2,12 +2,12 @@
 % Please edit documentation in R/import_cleaning.R
 \name{cleanData}
 \alias{cleanData}
-\title{Cleans the data frame}
+\title{Clean a data frame}
 \usage{
 cleanData(df, removeNA, removeDuplicates, cleanNames)
 }
 \arguments{
-\item{df}{a dataframe to be cleaned}
+\item{df}{a data frame to be cleaned}
 
 \item{removeNA}{a boolean to remove rows with NA values}
 
@@ -16,8 +16,8 @@ cleanData(df, removeNA, removeDuplicates, cleanNames)
 \item{cleanNames}{a boolean to clean the column names using the janitor package}
 }
 \value{
-A cleaned dataframe
+A cleaned data frame
 }
 \description{
-Cleans the data frame
+cleanData executes common data cleaning functions according to a few function inputs.
 }

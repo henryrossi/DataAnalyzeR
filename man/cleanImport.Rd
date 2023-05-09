@@ -2,7 +2,7 @@
 % Please edit documentation in R/import_cleaning.R
 \name{cleanImport}
 \alias{cleanImport}
-\title{Loads in a file and cleans it}
+\title{Load in a file and clean it}
 \usage{
 cleanImport(
   fileName,
@@ -27,8 +27,11 @@ cleanImport(
 \item{cleanNames}{a boolean to clean the column names using the janitor package}
 }
 \value{
-A cleaned dataframe
+A cleaned data frame
 }
 \description{
-Loads in a file and cleans it
+cleanImport() returns a cleaned data frame given a path (file name). It supports file types including csv, txt, xls, and xlsx. It decides the appropriate read.x function to use based on the path name and cleans the data according to user specifications.
+}
+\references{
+\url{https://i.imgur.com/7yBm8wY.jpg}
 }
