@@ -13,7 +13,8 @@ summarizeData <- function(dataFrame, var1, var2) {
     stop("Must provide a data frame")
   }
   if (!(var1 %in% colnames(dataFrame) && var2 %in% colnames(dataFrame))) {
-    stop("Must provide valid column names from the data frame")
+    stop("Must provide valid column names from the data frame.
+         Make sure you provide the column names inside quotes")
   }
   returnVec <- c()
   for (var in c(var1, var2)) {
