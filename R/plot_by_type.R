@@ -86,3 +86,5 @@ plot_by_type <- function(data, var1, var1type, var2 = "none", var2type = "none")
 }
 
 
+
+
