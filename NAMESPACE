@@ -2,6 +2,7 @@
 
 export("%>%")
 export(cleanImport)
+export(summarizeData)
 importFrom(dplyr,distinct)
 importFrom(janitor,clean_names)
 importFrom(magrittr,"%>%")
