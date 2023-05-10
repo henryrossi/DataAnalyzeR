@@ -2,7 +2,9 @@
 
 export("%>%")
 export(cleanImport)
+export(plot_by_type)
 export(summarizeData)
+import(ggplot2)
 importFrom(dplyr,distinct)
 importFrom(janitor,clean_names)
 importFrom(magrittr,"%>%")

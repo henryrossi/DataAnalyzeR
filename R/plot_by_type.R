@@ -10,7 +10,6 @@
 #'@param var2type Second variable type
 #'
 #'@import ggplot2
-#'@import pipe
 #'@return A plot based on variable types
 #'
 #'

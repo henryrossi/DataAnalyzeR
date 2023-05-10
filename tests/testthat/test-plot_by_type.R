@@ -1,9 +1,9 @@
-library(testthat)
+#library(testthat)
 library(ggplot2)
 library(itsadug)
 library(vdiffr)
 
-source("~/Desktop/DataAnalyzeR-main/R/plot_by_type.R")
+#source("~/Desktop/DataAnalyzeR-main/R/plot_by_type.R")
 
 numbers = c(1, 2, 4, 5, 2, 9)
 numbers2 = c(1, 2, 4, 5, 6, 10)
