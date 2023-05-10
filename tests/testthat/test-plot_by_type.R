@@ -1,6 +1,8 @@
 library(testthat)
 library(ggplot2)
 library(itsadug)
+library(vdiffr)
+
 source("~/Desktop/DataAnalyzeR-main/R/plot_by_type.R")
 
 numbers = c(1, 2, 4, 5, 2, 9)
@@ -75,13 +77,23 @@ actual_plot3 <- plot_by_type(data, numbers, "numeric", yn, "categorical")
 actual_plot4 <- plot_by_type(data, yn, "categorical", numbers, "numeric")
 actual_plot5 <- plot_by_type(data, numbers, "numeric", numbers2, "numeric")
 
-# Test that the plots are equivalent
-#expect_equal(actual_plot1, expected_plot1)
+environment(actual_plot1$layers[[1]]$super)$env$user_env <- environment(expected_plot1$layers[[1]]$super)$env$user_env
+
+# Test the plots
+expect_doppelganger("Histogram of 'numbers'", actual_plot1)
+expect_doppelganger("Bar Chart", actual_plot2)
+expect_doppelganger("Boxplot of 'yn' by 'numbers'", actual_plot3)
+expect_doppelganger("Boxplot of 'numbers' by 'yn'", actual_plot4)
+expect_doppelganger("Scatterplot of 'numbers' and 'number2'", actual_plot5)
+
 #expect_equal(actual_plot2, expected_plot2)
 #expect_equal(actual_plot3, expected_plot3)
 #expect_equal(actual_plot4, expected_plot4)
 #expect_equal(actual_plot5, expected_plot5)
-expect(plot_diff2(actual_plot1, expected_plot1) == NULL)
+
+
+
+
 })
 
 
@@ -93,4 +105,5 @@ test_that("Not listing the type of variable or misspelling gets an error", {
 test_that("Putting two categorical variables is not supported by this function", {
   expect_error(plot_by_type(data, yn, "categorical", lmh, "categorical"))
 })
+
 
